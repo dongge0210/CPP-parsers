@@ -1,0 +1,15 @@
+[submodule "extern/json"]
+	path = extern/json
+	url = https://github.com/nlohmann/json.git
+[submodule "extern/yaml-cpp"]
+	path = extern/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp.git
+[submodule "extern/tinyxml2"]
+	path = extern/tinyxml2
+	url = https://github.com/leethomason/tinyxml2.git
+[submodule "extern/tomlplusplus"]
+	path = extern/tomlplusplus
+	url = https://github.com/marzer/tomlplusplus.git
+[submodule "extern/inih"]
+	path = extern/inih
+	url = https://github.com/benhoyt/inih.git
