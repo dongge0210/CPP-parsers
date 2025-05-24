@@ -8,6 +8,7 @@ add_subdirectory(extern/json)
 add_subdirectory(extern/yaml-cpp)
 add_subdirectory(extern/tinyxml2)
 add_subdirectory(extern/tomlplusplus)
+add_subdirectory(extern/inih)
 # inih 没有官方CMake，使用你fork的CMake或直接添加头文件和源文件
 
 include_directories(
