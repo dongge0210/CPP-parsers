@@ -1,0 +1,52 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.vcxproj.user
+*.filters
+*.VC.db
+*.VC.VC.opendb
+
+# Build Folders (adjust based on your configuration names)
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+x64/
+Win32/
+ARM64/
+obj/
+DebugPS/
+ReleasePS/
+*/Debug/
+*/Release/
+*/x64/
+*/*/Debug/
+*/*/Release/
+*/*/x64/
+
+# Build Output
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.ilk
+*.sbr
+*.pch
+*.idb
+*.bsc
+*.tlog
+*.manifest
+*.res
+*.sdf
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Other common ignores
+*.[Cc]ache
+*.ncb
