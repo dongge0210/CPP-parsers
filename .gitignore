@@ -50,3 +50,5 @@ ReleasePS/
 # Other common ignores
 *.[Cc]ache
 *.ncb
+
+.DS_Store
