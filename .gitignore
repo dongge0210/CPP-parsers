@@ -52,3 +52,4 @@ ReleasePS/
 *.ncb
 
 .DS_Store
+/.litho
