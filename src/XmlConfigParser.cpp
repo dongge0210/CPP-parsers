@@ -1,4 +1,4 @@
-#include "../CPP-parsers/pch.h" // Adjusted path to pch.h
+#include "pch.h"
 #include "XmlConfigParser.h"
 
 bool XmlConfigParser::load(const std::string& filename) {
@@ -43,5 +43,6 @@ void XmlConfigParser::set(const std::string& key, const std::string& value) {
 }
 
 bool XmlConfigParser::save(const std::string& filename) const {
-    return doc.SaveFile(filename.c_str()) == tinyxml2::XML_SUCCESS;
+    // Use const_cast to work around tinyxml2's non-const SaveFile method
+    return const_cast<tinyxml2::XMLDocument&>(doc).SaveFile(filename.c_str()) == tinyxml2::XML_SUCCESS;
 }
