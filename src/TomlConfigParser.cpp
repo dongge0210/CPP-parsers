@@ -1,15 +1,10 @@
-#include "../CPP-parsers/pch.h" // Adjusted path to pch.h
+#include "pch.h"
 #include "TomlConfigParser.h"
 #include <iostream> // For error reporting, optional
 
 bool TomlConfigParser::load(const std::string& filename) {
     try {
-        auto parse_result = toml::parse_file(filename);
-        if (!parse_result) {
-            // std::cerr << "Failed to parse TOML file '" << filename << "': " << parse_result.error() << std::endl;
-            return false;
-        }
-        tbl = std::move(parse_result.table()); // Use .table() to get the table
+        tbl = toml::parse_file(filename);
         return true;
     } catch (const toml::parse_error& err) {
         // std::cerr << "TOML parsing error: " << err.what() << std::endl;

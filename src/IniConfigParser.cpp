@@ -1,4 +1,4 @@
-#include "../CPP-parsers/pch.h" // Adjusted path to pch.h
+#include "pch.h"
 #include "IniConfigParser.h"
 
 bool IniConfigParser::load(const std::string& filename) {

@@ -18,7 +18,6 @@
 #include <sstream>
 
 // Common project headers
-// Assuming IConfigParser.h is in ..\src\CPP-parsers\src
-#include "../src/IConfigParser.h"
+#include "../include/IConfigParser.h"
 
 #endif //PCH_H
