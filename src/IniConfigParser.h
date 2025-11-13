@@ -1,6 +1,6 @@
 #pragma once
 #include "IConfigParser.h" // This should be resolvable by the compiler's include paths
-#include <INIReader.h> // inih 库的 C++ 封装
+#include "INIReader.h" // inih 库的 C++ 封装
 #include <fstream>
 #include <string>
 #include <map>
