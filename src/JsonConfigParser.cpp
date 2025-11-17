@@ -1,4 +1,5 @@
 
+#include "../CPP-parsers/pch.h"
 #include "JsonConfigParser.h"
 
 bool JsonConfigParser::load(const std::string& filename) {
