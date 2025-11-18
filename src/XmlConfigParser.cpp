@@ -1,5 +1,5 @@
 
-#include "../CPP-parsers/pch.h"
+#include "pch.h"
 #include "XmlConfigParser.h"
 
 bool XmlConfigParser::load(const std::string& filename) {

@@ -1,5 +1,5 @@
 
-#include "../CPP-parsers/pch.h"
+#include "pch.h"
 #include "YamlConfigParser.h"
 
 bool YamlConfigParser::load(const std::string& filename) {
