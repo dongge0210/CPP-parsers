@@ -1,7 +1,6 @@
-
 #include "pch.h"
 #include "TomlConfigParser.h"
-#include <iostream> // For error reporting, optional
+#include <iostream>
 
 bool TomlConfigParser::load(const std::string& filename) {
     try {
