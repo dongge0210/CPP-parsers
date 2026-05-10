@@ -5,8 +5,8 @@
 #include <string>
 
 class JsonConfigParser : public IConfigParser {
-    nlohmann::json data;
 public:
+    nlohmann::json data;
     bool load(const std::string& filename) override {
         std::ifstream in(filename);
         if (!in) return false;
