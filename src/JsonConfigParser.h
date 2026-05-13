@@ -6,24 +6,29 @@
 
 class JsonConfigParser : public IConfigParser {
 public:
-    nlohmann::json data;
+    nlohmann::json& GetData() { return data_; }
+    const nlohmann::json& GetData() const { return data_; }
+
     bool load(const std::string& filename) override {
         std::ifstream in(filename);
         if (!in) return false;
-        in >> data;
+        in >> data_;
         return true;
     }
     std::string get(const std::string& key) const override {
-        if (data.contains(key)) return data[key].dump();
+        if (data_.contains(key)) return data_[key].dump();
         return "";
     }
     void set(const std::string& key, const std::string& value) override {
-        data[key] = value;
+        data_[key] = value;
     }
     bool save(const std::string& filename) const override {
         std::ofstream out(filename);
         if (!out) return false;
-        out << data.dump(2);
+        out << data_.dump(2);
         return true;
     }
+
+private:
+    nlohmann::json data_;
 };
