@@ -43,6 +43,5 @@ void XmlConfigParser::set(const std::string& key, const std::string& value) {
 }
 
 bool XmlConfigParser::save(const std::string& filename) const {
-    // Use const_cast to work around tinyxml2's non-const SaveFile method
     return const_cast<tinyxml2::XMLDocument&>(doc).SaveFile(filename.c_str()) == tinyxml2::XML_SUCCESS;
 }

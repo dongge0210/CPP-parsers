@@ -4,7 +4,7 @@
 
 bool TomlConfigParser::load(const std::string& filename) {
     try {
-        tbl = toml::parse_file(filename);
+        tbl = toml::parse_file(filename); // toml++ v3+ returns table directly
         return true;
     } catch (const toml::parse_error& err) {
         // std::cerr << "TOML parsing error: " << err.what() << std::endl;

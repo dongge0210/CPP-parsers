@@ -18,6 +18,7 @@
 #include <sstream>
 
 // Common project headers
+// IConfigParser.h is in ../include/
 #include "../include/IConfigParser.h"
 
 #endif //PCH_H
